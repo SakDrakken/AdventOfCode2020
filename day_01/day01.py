@@ -1,7 +1,4 @@
-
-def load_input():
-    with open("input.txt", "r") as f:
-        return [int(lines) for lines in f]
+import aoc_input
 
 
 def part_one(values: list):
@@ -20,6 +17,6 @@ def part_two(values: list):
 
 
 if __name__ == '__main__':
-    inp = load_input()
+    inp = aoc_input.load_input(as_ints=True)
     print(part_one(inp))
     print(part_two(inp))
